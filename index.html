@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+    <title>Tech Seminar Registration Form</title>
+  </head>
+  <body>
+    <h1>Tech Frontiers Seminar Registration</h1>
+    <img
+      id="aiImage"
+      class="seminar-image"
+      src="./images/pexels-tara-winstead-8386440.jpg"
+      alt="Artificial Intelligence"
+      width="300px"
+      height="auto"
+    />
+    <img
+      id="cybersecurity"
+      class="seminar-image"
+      src="./images/thisisengineering-ZPeXrWxOjRQ-unsplash.jpg"
+      alt="Cybersecurity"
+      width="300px"
+      height="auto"
+    />
+    <br />
+    <form id="registrationForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" name="name" id="fullName" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required /><br /><br />
+
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" name="zip" id="zip" required /><br /><br />
+
+      <label for="selectCountry">Select Country:</label>
+      <select name="country" id="selectCountry" required>
+        <option value="">Select Country</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="UAE">UAE</option>
+      </select><br /><br />
+
+      <label for="seminarTopic">Seminar Topic:</label>
+      <select name="seminarTopic" id="seminarTopic" required>
+        <option value="">Select a topic</option>
+        <option value="ai">Artificial Intelligence</option>
+        <option value="cybersecurity">Cybersecurity</option>
+        <option value="cloud">Cloud Computing</option>
+      </select><br /><br />
+
+      <button type="submit">Register</button><br /><br />
+    </form>
+    <div id="confirmationMessage"></div>
+  </body>
+</html>
