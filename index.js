@@ -10,6 +10,8 @@ const cybersecurity = document.getElementById('cybersecurity');
 
 form.addEventListener("submit", validate);
 
+// The big validation function.
+
 function validate(evt) {
     const nameVal = validateName();
     if (nameVal === false) {
@@ -49,6 +51,7 @@ function validate(evt) {
     return true;
   }
 
+ // Simple email validation. 
 function validateEmail() {
     let emailVal = email.value;
   
@@ -80,6 +83,8 @@ function validateEmail() {
     return emailVal;
   }
 
+
+// Name Validation
 function validateName() {
     if (fullName.value === "") {
       alert("Please provide a name.");
@@ -89,6 +94,7 @@ function validateName() {
     return fullName.value;
   }
 
+// Country Validation  
 function validateCountry() {
     if (selectCountry.value === "") {
       alert("Please provide a country.");
@@ -98,6 +104,7 @@ function validateCountry() {
     return selectCountry.value;
   }
 
+  // SeminarTopic Validation  
 function validateSeminarTopic() {
     if (seminarTopic.value === "") {
       alert("Please choose a topic.");
@@ -107,6 +114,7 @@ function validateSeminarTopic() {
     return seminarTopic.value;
   }
 
+  //Zip Code Validation
 function validateZip() {
     if (zip.value === "") {
       alert("Please provide a zip code.");
@@ -122,3 +130,5 @@ function validateZip() {
   
     return zip.value;
   }
+
+  //reference formValidation
