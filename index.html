@@ -27,32 +27,51 @@
     <br />
     <form id="registrationForm">
       <label for="fullname">Full Name:</label>
-      <input type="text" name="name" id="fullName" required /><br /><br />
+      <input
+        type="text"
+        name="name"
+        id="fullName"
+        required
+        aria-label="Full Name"
+        autocomplete="on"
+      /><br /><br />
 
       <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required /><br /><br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        autocomplete="on"
+      /><br /><br />
 
-      <label for="zipCode">Zip Code:</label>
-      <input type="text" name="zip" id="zip" required /><br /><br />
+      <label for="zip">Zip Code:</label>
+      <input
+        type="text"
+        name="zip"
+        id="zip"
+        required
+        autocomplete="on"
+      /><br /><br />
 
       <label for="selectCountry">Select Country:</label>
       <select name="country" id="selectCountry" required>
         <option value="">Select Country</option>
         <option value="USA">USA</option>
         <option value="UK">UK</option>
-        <option value="UAE">UAE</option>
-      </select><br /><br />
+        <option value="UAE">UAE</option></select
+      ><br /><br />
 
       <label for="seminarTopic">Seminar Topic:</label>
       <select name="seminarTopic" id="seminarTopic" required>
         <option value="">Select a topic</option>
         <option value="ai">Artificial Intelligence</option>
         <option value="cybersecurity">Cybersecurity</option>
-        <option value="cloud">Cloud Computing</option>
-      </select><br /><br />
+        <option value="cloud">Cloud Computing</option></select
+      ><br /><br />
 
       <button type="submit">Register</button><br /><br />
     </form>
-    <div id="confirmationMessage"></div>
+    <div id="confirmationMessage" style="display: flex"></div>
   </body>
 </html>
